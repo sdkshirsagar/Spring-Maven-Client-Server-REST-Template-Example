@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
-import pojos.ThreadClass;
 import pojos.User;
 
 @Controller
@@ -80,7 +79,7 @@ public class ClientUsingThreading
                     	 		public String   call() 
                     	 		{
                     	 			HttpEntity<User> ht = new HttpEntity<User>(u,headers);
-                    	 			return re.postForObject("http://localhost:8080/day14_spring_rest_server/xml/post",ht, String.class);
+                    	 			return re.postForObject("http://localhost:8080/spring_rest_server/xml/post",ht, String.class);
                     	 			
                     	 		}
                     		 }));

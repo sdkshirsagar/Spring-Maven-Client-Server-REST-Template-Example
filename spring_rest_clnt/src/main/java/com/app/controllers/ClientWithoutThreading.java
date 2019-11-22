@@ -90,7 +90,7 @@ public class ClientWithoutThreading
 				
 				
 				RequestEntity<Users> request = RequestEntity
-						     .post(new URI("http://localhost:8080/day14_spring_rest_server/xml/postlist"))
+						     .post(new URI("http://localhost:8080/spring_rest_server/xml/postlist"))
 						     .accept(MediaType.APPLICATION_XML)
 						     .body(tempUserList);
 				
